@@ -6,7 +6,11 @@
 </template>
 
 <script>
+import Vue from 'vue';
+import Navigation from '@/components/Global/Navigation/Nav';
 import Background from '@/components/Global/Background';
+
+Vue.component('navigation', Navigation);
 
 export default {
   name: 'App',
