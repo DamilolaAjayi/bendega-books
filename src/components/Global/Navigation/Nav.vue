@@ -28,9 +28,11 @@ export default {
 
 <style lang="scss" scoped>
   .nav {
+    color: #6794C4;    
     height: 3.5em;
-    padding: 0 20px;
-    position: relative;
+    padding: 0 90px;
+    position: fixed;
+    width: 100%;
     display: flex;
     z-index: 3; 
     transition: transform 0.5s;
@@ -46,7 +48,6 @@ export default {
     }
     &-left{
       width: 30%;
-      margin-left: 5%;
     }
     &-right {
       justify-content: flex-end;
@@ -72,9 +73,13 @@ export default {
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly;
-        &-web-link{
-          text-align: center;
-        }
+    }
+    &-web-link{
+      text-align: center;
+      font-weight: 500;
+      a:hover {
+        color: #1b262c;
+      }
     }
   }
 </style>

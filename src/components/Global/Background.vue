@@ -27,7 +27,6 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba($color: #bbe1fa, $alpha: 0.4) 0%, #bbe1fa 35%, rgba($color: #bbe1fa, $alpha: 0.4) 80%);
   }
 }
 </style>
