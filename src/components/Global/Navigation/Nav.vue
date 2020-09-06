@@ -47,11 +47,11 @@ export default {
       align-items: center;
     }
     &-left{
-      width: 30%;
+      width: 50%;
     }
     &-right {
-      justify-content: flex-end;
-      width: 70%;
+      padding-left: 13em;
+      width: 50%;
     }
     &-content {
       width: inherit;
@@ -72,7 +72,6 @@ export default {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
     }
     &-web-link{
       text-align: center;
