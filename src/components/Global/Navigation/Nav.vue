@@ -1,5 +1,5 @@
 <template>
-  <div class="nav">
+  <div class="nav container">
     <div class="nav-left">
       <div class="nav-logo">
         <router-link :to="{ name: 'Home' }">
@@ -9,13 +9,13 @@
     </div>
     <div class="nav-right">
       <div class="nav-content">
-        <div class="nav-web">
-        <ul class="nav-web-list">
-          <li class="nav-web-link"><router-link :to="{name: 'Author'}">Author</router-link></li>
-          <li>
-            <div class="ec-cart-widget"></div>
-          </li>
-        </ul>
+        <div class="nav-mobile" v-if="isMobile">
+            <img v-if="!menuClicked" src="@/assets/menu.svg" @click="toggleMenu" alt="Menu Icon">
+            <img class="close-button" v-else src="@/assets/close-button.svg" @click="toggleMenu" alt="Close Icon">
+            <mobile-nav v-if="showMobileNav" />
+        </div>
+        <div class="nav-web" v-else>
+          <web-nav />
         </div>
       </div>
         <!-- shopping cart in here -->
@@ -24,8 +24,27 @@
 </template>
 
 <script>
+import IsMobile from '@/mixins/IsMobile';
+import WebNav from './WebNav';
+import MobileNav from './MobileNav';
+
 export default {
-    
+  mixins: [IsMobile],
+  components: {
+    MobileNav,
+    WebNav,
+  },
+  data() {
+    return {
+      showMobileNav: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.showMobileNav = !this.showMobileNav;
+      this.menuClicked = !this.menuClicked;
+    },
+  }
 }
 </script>
 
@@ -33,11 +52,11 @@ export default {
   .nav {
     color: #6794C4;    
     height: 3.5em;
-    padding: 0 11%;
     position: relative;
     width: 100%;
     display: flex;
-    z-index: 3; 
+    font-weight: 500;
+    z-index: 3;
     transition: transform 0.5s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     // @media screen and (min-width: 960px) {
@@ -71,20 +90,12 @@ export default {
         height: 25px;
       }
     }
-    // &-mobile {
-    //   float: right;
+    // &-web-link{
+    //   text-align: center;
+    //   font-weight: 500;
+    //   a:hover {
+    //     color: #1b262c;
+    //   }
     // }
-    &-web-list {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-    &-web-link{
-      text-align: center;
-      font-weight: 500;
-      a:hover {
-        color: #1b262c;
-      }
-    }
   }
 </style>

@@ -20,6 +20,7 @@ export default {
 }
 </script>
 
+<style lang="scss" src="./scss/helper.scss"></style>
 <style lang="scss" src="./scss/reset.scss"></style>
 <style lang="scss">
   .app {

@@ -2,8 +2,7 @@
   <ul class="nav-web-list">
     <li class="nav-web-link"><router-link :to="{name: 'Author'}" >Author</router-link></li>
     <li class="nav-web-link"><router-link  :to="{name: 'Store'}" >Store</router-link></li>
-    <li class="nav-web-link"><router-link class="nav-right-link" :to="{name: '#'}" >FAQs</router-link></li>
-    <li class="nav-web-link"><router-link class="nav-right-link" :to="{name: '#'}" >Contact</router-link></li>
+    <li class="nav-web-link"><router-link class="nav-right-link" :to="{name: 'Faq'}" >FAQs</router-link></li>
   </ul>
 </template>
 
@@ -20,13 +19,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .nav-web-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  .nav {
+     &-web-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+     }
      &-web-link{
-      text-align: center;
+        a:hover {
+            font-weight: 800;
+        }
     }
-  }
+  } 
 </style>
