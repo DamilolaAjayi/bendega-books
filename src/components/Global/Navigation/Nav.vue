@@ -33,16 +33,19 @@ export default {
   .nav {
     color: #6794C4;    
     height: 3.5em;
-    padding: 0 90px;
+    padding: 0 11%;
     position: relative;
     width: 100%;
     display: flex;
     z-index: 3; 
     transition: transform 0.5s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    @media screen and (min-width: 960px) {
-      z-index: 300;
-    }
+    // @media screen and (min-width: 960px) {
+    //   z-index: 300;
+    // }
+    // @media screen and (max-width: 768px) {
+    //   padding: 0;
+    // }
     &-left, &-right , &-logo {
       height: 3.5em;
       display: flex;
@@ -53,7 +56,7 @@ export default {
       width: 50%;
     }
     &-right {
-      padding-left: 13em;
+      justify-content: flex-end;
       width: 50%;
     }
     &-content {

@@ -22,18 +22,18 @@ export default {
 
 <style lang="scss" src="./scss/reset.scss"></style>
 <style lang="scss">
-  // .app {
-  //   position: relative;
-  //   height: 100vh;
-  //   overflow: auto;
-  //   &__frame {
-  //     display: flex;
-  //     flex-direction: column;
-  //     height: 100%;
-  //     > main {
-  //       overflow: auto;
-  //       flex: 1;
-  //     }
-  //   }
-  // }
+  .app {
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+    &__frame {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      > main {
+        overflow: auto;
+        flex: 1;
+      }
+    }
+  }
 </style>

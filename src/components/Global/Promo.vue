@@ -16,7 +16,7 @@ export default {
 <style lang="scss" scoped>
     .promo {
         height: 4em;
-        margin: 5rem auto 2.5rem;
+        margin: 2.5rem auto;
         box-shadow: 0 2px 21px rgba(0,0,0,0.06);
         border-radius: 2rem;
         max-width: 300px;

@@ -1,6 +1,7 @@
 <template>
     <div>
         <navigation></navigation>
+        <main>
         <div class="author--profile">
             <div class="author--profile__image">
                 <img src="@/assets/common-errors-author.png" alt="common errors author">
@@ -10,7 +11,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita ullam porro cupiditate. Quis exercitationem rem omnis deleniti mollitia ea, placeat in sunt quia quisquam eveniet commodi fuga accusamus cum.
                 </p>
             </div>
-        </div>        
+        </div>
+        </main>        
     </div>
 </template>
 
@@ -25,6 +27,10 @@ export default {
         margin: 0 10%;
         padding-top: 80px;
         display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
         &__text {
             line-height: 120%;
             display: flex;
