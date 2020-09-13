@@ -59,12 +59,6 @@ export default {
     z-index: 3;
     transition: transform 0.5s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    // @media screen and (min-width: 960px) {
-    //   z-index: 300;
-    // }
-    // @media screen and (max-width: 768px) {
-    //   padding: 0;
-    // }
     &-left, &-right , &-logo {
       height: 3.5em;
       display: flex;
@@ -80,8 +74,9 @@ export default {
     }
     &-content {
       width: inherit;
-      .close-button {
-        background: #e5e5e5;
+      @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: flex-end;
       }
     }
     &-logo {
@@ -90,12 +85,5 @@ export default {
         height: 25px;
       }
     }
-    // &-web-link{
-    //   text-align: center;
-    //   font-weight: 500;
-    //   a:hover {
-    //     color: #1b262c;
-    //   }
-    // }
   }
 </style>

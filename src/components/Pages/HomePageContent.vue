@@ -14,10 +14,7 @@
             <div class="landing__image">
                 <img src="@/assets/common-errors-book.png" alt="">
             </div>
-        </div> 
-        <div class="extension">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquam laudantium delectus quos labore accusamus, aspernatur nulla, accusantium ut dignissimos provident, saepe est distinctio nam! Deleniti veritatis corrupti iste velit!    
-        </div>       
+        </div>      
     </div>
 </template>
 
