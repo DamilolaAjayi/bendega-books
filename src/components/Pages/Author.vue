@@ -14,6 +14,12 @@
     </div>
 </template>
 
+<script>
+export default {
+    name: 'author',
+}
+</script>
+
 <style lang="scss" scoped>
     .author--profile {
         margin: 0 10%;

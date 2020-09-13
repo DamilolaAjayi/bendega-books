@@ -12,6 +12,9 @@
         <div class="nav-web">
         <ul class="nav-web-list">
           <li class="nav-web-link"><router-link :to="{name: 'Author'}">Author</router-link></li>
+          <li>
+            <div class="ec-cart-widget"></div>
+          </li>
         </ul>
         </div>
       </div>
@@ -31,7 +34,7 @@ export default {
     color: #6794C4;    
     height: 3.5em;
     padding: 0 90px;
-    position: fixed;
+    position: relative;
     width: 100%;
     display: flex;
     z-index: 3; 

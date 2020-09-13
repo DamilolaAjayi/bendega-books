@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <background />
-    <router-view></router-view>
+    <router-view class="app__frame" />
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import Background from '@/components/Global/Background';
 Vue.component('navigation', Navigation);
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     Background,
   }
@@ -22,5 +22,18 @@ export default {
 
 <style lang="scss" src="./scss/reset.scss"></style>
 <style lang="scss">
-
+  // .app {
+  //   position: relative;
+  //   height: 100vh;
+  //   overflow: auto;
+  //   &__frame {
+  //     display: flex;
+  //     flex-direction: column;
+  //     height: 100%;
+  //     > main {
+  //       overflow: auto;
+  //       flex: 1;
+  //     }
+  //   }
+  // }
 </style>
