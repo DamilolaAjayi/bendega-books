@@ -9,8 +9,10 @@
 import Vue from 'vue';
 import Navigation from '@/components/Global/Navigation/Nav';
 import Background from '@/components/Global/Background';
+import Foot from '@/components/Global/Foot';
 
 Vue.component('navigation', Navigation);
+Vue.component('foot', Foot);
 
 export default {
   name: 'app',

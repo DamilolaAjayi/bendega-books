@@ -27,6 +27,7 @@ export default {
         justify-content: space-between;
      }
      &-web-link{
+        list-style: none;
         a:hover {
             font-weight: 800;
         }

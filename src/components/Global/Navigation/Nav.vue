@@ -37,6 +37,7 @@ export default {
   data() {
     return {
       showMobileNav: false,
+      menuClicked: false,
     };
   },
   methods: {

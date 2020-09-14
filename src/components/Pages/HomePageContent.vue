@@ -30,6 +30,10 @@ export default {
             display: flex;
             justify-content: space-between;
             padding-top: 2rem;
+            @media screen and (max-width: 767px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
             &--text {
                 max-width: 450px;
                 padding: 30px 0;

@@ -1,6 +1,9 @@
 <template>
     <div>
-        <h1>Store</h1>
+        <navigation></navigation>
+        <main>
+            <h1>Store</h1>
+        </main>
     </div>
 </template>
 
