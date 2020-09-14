@@ -25,5 +25,8 @@ export default {
     .common--issues {
         background-color: #e7edf6;
         padding-top: 3em;
+    }    
+    li {
+        margin-left: 1.2em;
     }
 </style>

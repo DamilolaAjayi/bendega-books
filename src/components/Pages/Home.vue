@@ -6,8 +6,8 @@
                 <promo />
                 <home-page />
                 <common-issues />
+                <foot></foot>
             </div>
-            <foot></foot>
         </main>
     </div>
 </template>

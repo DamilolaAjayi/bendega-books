@@ -35,21 +35,29 @@ export default {
                 flex-direction: column-reverse;
             }
             &--text {
-                max-width: 450px;
                 padding: 30px 0;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                @media screen and (max-width: 767px) {
+                    padding: 1.2em 0;
+                    align-items: center;
+                }
             }
         }        
         &__image {
             img {
-                height: 400px;
+                height: 350px;
+                width: 350px;
                 border: 1px solid #fcfcfc;
                 border-radius: 5px;
                 background: white;
                 border: 1px solid #fcfcfc;
                 box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);                
+            }
+            @media screen and (max-width: 767px) {
+                width: 250px;
+                height: 350px;
+                margin: 0 auto;
             }
         }
     }
@@ -59,6 +67,12 @@ export default {
             font-size: 4rem;
             padding-top: 3rem;
             margin: 0;
+            @media screen and (max-width: 767px) {
+                padding-top: 0;
+                text-align: center;
+                width: max-content;
+                border-bottom: 3px solid #6794c4;
+            }
         }
         &--paragraph {
             line-height: 1.5;
@@ -70,5 +84,8 @@ export default {
         height: .5rem;
         width: 5rem;
         background-color: #6794C4;
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
     }
 </style>

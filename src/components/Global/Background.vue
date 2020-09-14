@@ -14,10 +14,6 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../../assets/bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
   position: fixed;
   z-index: -1;
   &:before {
