@@ -78,6 +78,9 @@ export default {
             line-height: 1.5;
             padding: 6rem 0;
             font-size: 1.2em;
+            @media screen and (max-width: 767px) {
+                padding: 1rem;
+            }
         }
     }
     .underline {

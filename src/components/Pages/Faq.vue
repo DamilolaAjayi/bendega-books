@@ -13,7 +13,7 @@
                         </div>
                         <div class="faq">
                             <li>I need some assistance. Where can I contact?</li>
-                            <p class="answer">- Please send us an <a :href="`mailto: bendegabooks@gmail.com`">email</a> and we’ll get be in touch.</p>
+                            <p class="answer">- Please send us an <a :href="`mailto: bendegabooks@gmail.com`">email</a> and we’ll get in touch.</p>
                         </div>
                     </ul>
                 </div>
