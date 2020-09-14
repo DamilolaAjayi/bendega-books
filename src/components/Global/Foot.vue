@@ -4,7 +4,7 @@
             <h2 class="contact__header">Get in Touch</h2>
             <ul class="contact__list">
                 <li>+(234)-806-008-2265</li>
-                <li><a :href="`mailto: bendegabooks@gmail.com`"></a></li>
+                <li><a :href="`mailto: bendegabooks@gmail.com`">bendegabooks@gmail.com</a></li>
             </ul>
         </div>
 
@@ -26,5 +26,8 @@ export default {
             font-weight: 500;
             list-style: none;
         }
+    }
+    a {
+        color: inherit;
     }
 </style>

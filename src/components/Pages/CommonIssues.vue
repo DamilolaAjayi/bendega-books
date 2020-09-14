@@ -7,7 +7,7 @@
             <ul>
                 <li>Desire to travel abroad but are frustrated with low scores in IELTS/TOEFL?</li>
                 <li>Struggle with slow career growth?</li>
-                <li>experience derailed academic progress as a result of poor communication?</li>
+                <li>Experience derailed academic progress as a result of poor communication?</li>
             </ul>
             <p>
                 It’s time to ditch the guesswork and gain mastery of the common errors in English Language and how you can overcome them.
@@ -27,10 +27,16 @@ export default {
 
 <style lang="scss" scoped>
     .common--issues {
-        padding: 3rem;
+        padding: 3rem 0rem;
         background-color: #e7edf6;
     }    
     li {
         margin: 2em 1.2em;
+    }
+    ul {
+        padding: 0 3rem 1rem;
+    }
+    p>a {
+        font-weight: bold;
     }
 </style>

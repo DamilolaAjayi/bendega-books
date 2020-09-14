@@ -10,6 +10,9 @@
                     Discover how to <span>fix</span> and <span>overcome</span> the <span>common errors in English Language</span> with this book 
                     by renowned author and linguist,<span> William Bendega</span>.
                 </p>
+                <p class="action">
+                    <a href="#">Order now</a> only <span>₦3,000</span> <img src="@/assets/arrow.svg" alt=""> <span>₦1,500</span>
+                </p>
             </div>
             <div class="landing__image">
                 <img src="@/assets/common-errors-book.png" alt="">
@@ -102,6 +105,23 @@ export default {
             border: none;
             color: black;
             font-weight: 500;
+        }
+    }
+    .action {
+        font-weight: bold;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        &>span{
+            text-decoration: line-through;
+            margin: 6px;
+            color: black;
+        }
+        &>span:last-child {
+            text-decoration: underline;
+        }
+        img, a {
+            margin: 5px;
         }
     }
 </style>
