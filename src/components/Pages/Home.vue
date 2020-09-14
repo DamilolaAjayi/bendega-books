@@ -2,12 +2,10 @@
     <div>
         <navigation></navigation>
         <main>
-            <div class="container">
                 <promo />
                 <home-page />
                 <common-issues />
                 <foot></foot>
-            </div>
         </main>
     </div>
 </template>

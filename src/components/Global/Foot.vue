@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="footer container">
         <div class="contact">
             <h2 class="contact__header">Get in Touch</h2>
             <ul class="contact__list">

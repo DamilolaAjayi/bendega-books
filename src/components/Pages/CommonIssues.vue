@@ -1,5 +1,5 @@
 <template>
-    <div class="common--issues">
+    <div class="common--issues container">
         <h2 class="common--issues__header">
             Do you?
         </h2>
@@ -24,7 +24,6 @@ export default {
 <style lang="scss" scoped>
     .common--issues {
         background-color: #e7edf6;
-        padding-top: 3em;
     }    
     li {
         margin-left: 1.2em;

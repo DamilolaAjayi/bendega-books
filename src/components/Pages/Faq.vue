@@ -19,7 +19,9 @@
                 </div>
             </div>
         </div>
-        <foot></foot>
+        <div class="footer">
+            <foot></foot>
+        </div>
         </main>
     </div>
 </template>
@@ -47,5 +49,10 @@ export default {
     }
     li {
         font-weight: 500;
+    }
+    .footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
     }
 </style>
