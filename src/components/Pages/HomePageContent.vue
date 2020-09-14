@@ -78,8 +78,9 @@ export default {
             }
         }
         &--paragraph {
-            line-height: 1.5;
+            // line-height: 1.5;
             padding: 6rem 0;
+            line-height: 1.8;
             font-size: 1.2em;
             @media screen and (max-width: 767px) {
                 padding: 1rem;
@@ -95,11 +96,11 @@ export default {
             }
     }
     span {
-        @media screen and (max-width: 767px) {
-            border-bottom: 1px solid #6794c4;
-        }
+        font-weight: 500;
+        color: #6794C4;
         &:last-of-type {
             border: none;
+            color: black;
             font-weight: 500;
         }
     }
