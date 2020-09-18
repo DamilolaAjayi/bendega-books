@@ -11,7 +11,7 @@
                     by renowned author and linguist,<span> William Bendega</span>.
                 </p>
                 <p class="action">
-                    <a href="#">Order now</a> only <span>₦3,000</span> <img src="@/assets/arrow.svg" alt=""> <span>₦1,500</span>
+                    <a href="store.html">Order now</a> only <span>₦3,000</span> <img src="@/assets/arrow.svg" alt=""> <span>₦1,500</span>
                 </p>
             </div>
             <div class="landing__image">

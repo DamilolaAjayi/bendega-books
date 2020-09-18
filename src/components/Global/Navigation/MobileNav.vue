@@ -2,7 +2,7 @@
   <div class="nav-mobile">
     <ul class="nav-mobile-list">
       <li><router-link :to="{name: 'Author'}">Author</router-link></li>
-      <li><router-link :to="{name: 'Store'}">Store</router-link></li>
+      <li><a href="store.html">store</a></li>
       <li><router-link :to="{name: 'Faq'}">FAQs</router-link></li>
     </ul>
   </div>

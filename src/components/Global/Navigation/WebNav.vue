@@ -1,7 +1,7 @@
 <template>
   <ul class="nav-web-list">
     <li class="nav-web-link"><router-link :to="{name: 'Author'}" >Author</router-link></li>
-    <li class="nav-web-link"><router-link  :to="{name: 'Store'}" >Store</router-link></li>
+    <li class="nav-web-link"><a href="store.html">store</a></li>
     <li class="nav-web-link"><router-link class="nav-right-link" :to="{name: 'Faq'}" >FAQs</router-link></li>
   </ul>
 </template>
@@ -10,11 +10,6 @@
 
 export default {
   name: 'web-nav',
-  methods: {
-    isPage(route) {
-      return this.$route.path === `/${route}`;
-    },
-  },
 };
 </script>
 
