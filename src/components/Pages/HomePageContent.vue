@@ -45,8 +45,7 @@ export default {
                 display: flex;
                 flex-direction: column;
                 @media screen and (max-width: 767px) {
-                    padding-top: 0;
-                    padding-bottom: 1.2em;
+                    padding: 1.2em 0;
                     align-items: center;
                 }
             }
