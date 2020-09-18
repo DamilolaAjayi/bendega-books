@@ -15,7 +15,8 @@
                 </p>
             </div>
             <div class="landing__image">
-                <img src="@/assets/common-errors-book.png" alt="">
+                <img src="@/assets/common-errors-book.png" alt="common errors book">
+                <a href="store.html" class="cta">Order Now</a>
             </div>
         </div>      
     </div>
@@ -30,6 +31,7 @@ export default {
 <style lang="scss" scoped>
     .landing {
         &__content {
+            height: 85vh;
             display: flex;
             justify-content: space-between;
             padding-top: 2rem;
@@ -43,12 +45,15 @@ export default {
                 display: flex;
                 flex-direction: column;
                 @media screen and (max-width: 767px) {
-                    padding: 1.2em 0;
+                    padding-top: 0;
+                    padding-bottom: 1.2em;
                     align-items: center;
                 }
             }
         }        
         &__image {
+            display: flex;
+            flex-direction: column;
             margin-right: 10%;
             img {
                 height: 350px;
@@ -60,7 +65,7 @@ export default {
                 box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);                
             }
             @media screen and (max-width: 767px) {
-                width: 250px;
+                width: 300px;
                 height: 350px;
                 border-radius: 5px;
                 margin: 0 auto;
@@ -81,7 +86,6 @@ export default {
             }
         }
         &--paragraph {
-            // line-height: 1.5;
             padding: 6rem 0;
             line-height: 1.8;
             font-size: 1.2em;
@@ -122,6 +126,39 @@ export default {
         }
         img, a {
             margin: 5px;
+        }
+    }
+    .cta {
+        margin: 3rem auto;
+        width: 50%;
+        background-color: #6794C4;
+        outline: none;
+        border: none;
+        padding: 0.8em;
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        border-radius: 6px;
+        animation: glowing 2000ms infinite;
+        -webkit-animation: glowing 2000ms infinite;
+        -moz-animation: glowing 2000ms infinite;
+        -o-animation: glowing 2000ms infinite;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    @keyframes glowing {
+        0% {
+            background-color: #6794C4;
+            box-shadow: 0 0 3px #2ba805;
+        }
+        50% {
+            background-color: #6794C4;
+            box-shadow: 0 0 10px #49e819;
+        }
+        100% {
+            background-color: #6794C4;
+            box-shadow: 0 0 3px #6794C4;
         }
     }
 </style>

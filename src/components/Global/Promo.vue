@@ -33,23 +33,8 @@ export default {
         span {
             color: #6794C4;
         }
+        @media screen and (max-width: 767px) {
+            margin: 1.2rem auto 0;
+        }
     }
-    // .preview {
-    //     animation: float 6s ease-in-out infinite;
-    //     height: auto;
-    //     width: 100%;
-    //     position: relative;
-    // }
-    // @keyframes float {
-    //     0% {
-    //         transform: translateY(0px);
-    //     }
-    //     50% {
-    //         transform: translateY(-20px);
-    //     }
-    //     100% {
-    //         transform: translateY(0px);
-    //     }        
-    // }
-
 </style>

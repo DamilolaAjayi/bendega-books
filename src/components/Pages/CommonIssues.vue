@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss" scoped>
     .common--issues {
+        height: 90vh;
         padding: 3rem 0rem;
         background-color: #e7edf6;
     }    
