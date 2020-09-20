@@ -1,7 +1,6 @@
 <template>
   <div id="store">
-    <h1>Store</h1>
-        <div id="my-store-36768215"></div>
+    <div id="my-store-36768215"></div>
   </div>
 </template>
 
@@ -13,7 +12,7 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
+#store {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -13,7 +13,7 @@
                 It’s time to <span> ditch</span> the guesswork and <span> gain mastery of the common errors </span> in English Language and how you can <span> overcome </span>them.
             </p>
             <p class="closing--text">
-                <a href="/store">Order now </a>and start achieving better results.
+                <a href="/store#!/~/cart">Order now </a>and start achieving better results.
             </p>            
         </div>
     </div>
