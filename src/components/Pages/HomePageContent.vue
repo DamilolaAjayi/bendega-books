@@ -40,6 +40,7 @@ export default {
             @media screen and (max-width: 767px) {
                 display: flex;
                 flex-direction: column-reverse;
+                padding-bottom: 0;
             }
             &--text {
                 width: 50%;
@@ -96,7 +97,7 @@ export default {
             line-height: 1.8;
             font-size: 1.2em;
             @media screen and (max-width: 767px) {
-                padding: 1rem 0;
+                padding: 1.3rem 0;
             }
         }
     }
@@ -175,11 +176,14 @@ export default {
         top: 0;
         left: 0;
         opacity: 0.9;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             right: 0;
             left: auto;
             margin-right: -10%;
             width: 45%;
+        }
+        @media screen and (max-width: 450px) {
+            margin-right: -15px;
         }
     }
     .floater {
