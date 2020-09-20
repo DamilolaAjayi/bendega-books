@@ -3,7 +3,7 @@
         <div class="landing__content">
             <div class="landing__content--text">
                 <div>
-                    <h2 class="text--header">Common Errors In English Language Today</h2>
+                    <h2 class="text--header">Better English, Better Results</h2>
                 </div>
                 <p class="text--paragraph">
                     Discover how to <span>fix</span> and <span>overcome</span> the <span>common errors in English Language</span> with this book 
@@ -12,7 +12,7 @@
                 <p class="action">
                     <a href="/store#!/~/cart">Order now</a> only <span>₦3,000</span> <img src="@/assets/arrow.svg" alt=""> <span>₦1,500</span>
                 </p>
-                <p class="floater">Better English, Better Results</p>
+                <!-- <p class="floater">Better English, Better Results</p> -->
             </div>
             <div class="landing__item">
                 <div class="landing__image">
@@ -49,7 +49,7 @@ export default {
                 flex-direction: column;
                 @media screen and (max-width: 767px) {
                     padding: 1.2em 0;
-                    align-items: center;
+                    align-items: left;
                     width: 100%;
                 }
             }
@@ -82,8 +82,9 @@ export default {
     }
     .text {
         &--header {
-            font-weight: 500;
-            font-size: 4rem;
+            font-weight: 800;
+            font-size: 2em;
+            width: max-content;
             margin: 0;
             @media screen and (max-width: 767px) {
                 padding-top: 0;
@@ -186,13 +187,13 @@ export default {
             margin-right: -15px;
         }
     }
-    .floater {
-        padding: 1em 0;
-        font-weight: 800;
-        font-size: 2em;
-        color: #6794c4;
-        @media screen and (max-width: 767px) {
-            max-width: 16.5em;
-        }
-    }
+    // .floater {
+    //     padding: 1em 0;
+    //     font-weight: 800;
+    //     font-size: 2em;
+    //     color: #6794c4;
+    //     @media screen and (max-width: 767px) {
+    //         max-width: 16.5em;
+    //     }
+    // }
 </style>
