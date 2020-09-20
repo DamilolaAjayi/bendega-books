@@ -9,10 +9,10 @@
 import Vue from 'vue';
 import Navigation from '@/components/Global/Navigation/Nav';
 import Background from '@/components/Global/Background';
-import Foot from '@/components/Global/Foot';
+import Footer from '@/components/Global/Footer';
 
 Vue.component('navigation', Navigation);
-Vue.component('foot', Foot);
+Vue.component('el-footer', Footer);
 
 export default {
   name: 'app',

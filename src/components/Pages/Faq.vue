@@ -19,9 +19,9 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <foot></foot>
-        </div>
+        <!-- <div class="footer">
+            <el-footer></el-footer>
+        </div> -->
         </main>
     </div>
 </template>
@@ -46,6 +46,7 @@ export default {
     .faq {
         padding-bottom: 3rem;
         padding-left: 1em;
+        font-size: 1.2em;
     }
     li {
         font-weight: 500;

@@ -2,22 +2,19 @@
     <div>
         <navigation></navigation>
         <main>
-                <promo />
                 <home-page />
                 <common-issues />
-                <foot></foot>
+                <el-footer></el-footer>
         </main>
     </div>
 </template>
 
 <script>
 import HomePageContent from './HomePageContent.vue';
-import Promo from '../Global/Promo.vue';
 import CommonIssues from './CommonIssues.vue';
 
 export default {
     components: {
-        Promo,
         HomePage: HomePageContent,
         CommonIssues,
     },

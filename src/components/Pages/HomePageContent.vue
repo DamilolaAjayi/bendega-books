@@ -1,24 +1,27 @@
 <template>
-    <div>
-        <div class="landing__content container">
+    <div class="container">
+        <div class="landing__content">
             <div class="landing__content--text">
                 <div>
-                    <h2 class="text--header">Common Errors</h2>
-                    <div class="underline"></div>
+                    <h2 class="text--header">Common Errors In English Language Today</h2>
                 </div>
                 <p class="text--paragraph">
                     Discover how to <span>fix</span> and <span>overcome</span> the <span>common errors in English Language</span> with this book 
                     by renowned author and linguist,<span> William Bendega</span>.
                 </p>
                 <p class="action">
-                    <a href="store.html">Order now</a> only <span>₦3,000</span> <img src="@/assets/arrow.svg" alt=""> <span>₦1,500</span>
+                    <a href="/store">Order now</a> only <span>₦3,000</span> <img src="@/assets/arrow.svg" alt=""> <span>₦1,500</span>
                 </p>
+                <p class="floater">Better English, Better Results</p>
             </div>
-            <div class="landing__image">
-                <img src="@/assets/common-errors-book.png" alt="common errors book">
-                <a href="store.html" class="cta">Order Now</a>
+            <div class="landing__item">
+                <div class="landing__image">
+                    <img class="promo-banner" src="@/assets/50-off.png" alt="50% off banner">
+                    <img src="@/assets/common-errors-book.png" alt="common errors book">
+                </div>
+                <a href="/store" class="cta">Order Now</a>  
             </div>
-        </div>      
+        </div>
     </div>
 </template>
 
@@ -31,30 +34,36 @@ export default {
 <style lang="scss" scoped>
     .landing {
         &__content {
-            height: 85vh;
             display: flex;
             justify-content: space-between;
-            padding-top: 2rem;
+            padding: 5em 0;
             @media screen and (max-width: 767px) {
                 display: flex;
                 flex-direction: column-reverse;
             }
             &--text {
-                max-width: 450px;
-                padding: 30px 0;
+                width: 50%;
+                padding: 0.625em 0;
                 display: flex;
                 flex-direction: column;
                 @media screen and (max-width: 767px) {
                     padding: 1.2em 0;
                     align-items: center;
+                    width: 100%;
                 }
+            }
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (max-width: 767px) {
+                justify-content: center;
             }
         }        
         &__image {
-            display: flex;
-            flex-direction: column;
-            margin-right: 10%;
-            img {
+            position: relative;
+            img:last-child {
                 height: 350px;
                 width: 350px;
                 border: 1px solid #fcfcfc;
@@ -64,8 +73,7 @@ export default {
                 box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);                
             }
             @media screen and (max-width: 767px) {
-                width: 300px;
-                height: 350px;
+                width: 100%;
                 border-radius: 5px;
                 margin: 0 auto;
             }
@@ -75,31 +83,22 @@ export default {
         &--header {
             font-weight: 500;
             font-size: 4rem;
-            padding-top: 3rem;
             margin: 0;
             @media screen and (max-width: 767px) {
                 padding-top: 0;
-                text-align: center;
-                width: max-content;
+                font-size: 2rem;
                 border-bottom: 3px solid #6794c4;
             }
         }
         &--paragraph {
-            padding: 6rem 0;
+            padding: 4rem 0;
+            max-width: 28em;
             line-height: 1.8;
             font-size: 1.2em;
             @media screen and (max-width: 767px) {
-                padding: 1rem;
+                padding: 1rem 0;
             }
         }
-    }
-    .underline {
-        height: .5rem;
-        width: 5rem;
-        background-color: #6794C4;
-            @media screen and (max-width: 767px) {
-                display: none;
-            }
     }
     span {
         font-weight: 500;
@@ -112,6 +111,7 @@ export default {
     }
     .action {
         font-weight: bold;
+        font-size: 1.2em;
         margin: 0;
         display: flex;
         align-items: center;
@@ -124,12 +124,15 @@ export default {
             text-decoration: underline;
         }
         img, a {
-            margin: 5px;
+            margin-right: 5px;
         }
+        @media screen and (max-width: 767px) {
+            font-size: 1em;
+        }        
     }
     .cta {
-        margin: 3rem auto;
-        width: 50%;
+        margin: 3rem 0 3rem;
+        width: 350px;
         background-color: #6794C4;
         outline: none;
         border: none;
@@ -145,6 +148,10 @@ export default {
         @media screen and (max-width: 767px) {
             width: 100%;
         }
+        &--block {
+            margin: 2rem 0;
+            padding-right: 0;
+        }
     }
     @keyframes glowing {
         0% {
@@ -158,6 +165,30 @@ export default {
         100% {
             background-color: #6794C4;
             box-shadow: 0 0 3px #6794C4;
+        }
+    }
+    .promo-banner {
+        position: absolute;
+        width: 50%;
+        margin-top: -50px;
+        margin-left: -80px;
+        top: 0;
+        left: 0;
+        opacity: 0.9;
+        @media screen and (max-width: 767px) {
+            right: 0;
+            left: auto;
+            margin-right: -10%;
+            width: 45%;
+        }
+    }
+    .floater {
+        padding: 1em 0;
+        font-weight: 800;
+        font-size: 2em;
+        color: #6794c4;
+        @media screen and (max-width: 767px) {
+            max-width: 16.5em;
         }
     }
 </style>

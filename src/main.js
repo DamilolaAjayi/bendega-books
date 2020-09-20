@@ -4,7 +4,6 @@ import VueRouter from 'vue-router';
 import Home from './components/Pages/Home.vue';
 import Author from './components/Pages/Author.vue';
 import Faq from './components/Pages/Faq.vue';
-import Store from './components/Store/store.vue';
 
 Vue.config.productionTip = false;
 
@@ -16,7 +15,6 @@ const router = new VueRouter({
       {path: '/', name: 'Home', component: Home},
       {path: '/author', name: 'Author', component: Author},
       {path: '/faq', name: 'Faq', component: Faq},
-      {path: '/store', name: 'Store', component: Store},
   ]
 })
 new Vue({

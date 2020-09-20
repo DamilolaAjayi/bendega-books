@@ -1,7 +1,7 @@
 <template>
   <ul class="nav-web-list">
     <li class="nav-web-link"><router-link :to="{name: 'Author'}" >Author</router-link></li>
-    <li class="nav-web-link"><a href="store.html">Store</a></li>
+    <li class="nav-web-link"><a href="/store">Store</a></li>
     <li class="nav-web-link"><router-link class="nav-right-link" :to="{name: 'Faq'}" >FAQs</router-link></li>
   </ul>
 </template>

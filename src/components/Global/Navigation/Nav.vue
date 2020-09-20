@@ -1,5 +1,5 @@
 <template>
-  <div class="nav container">
+  <div class="nav">
     <div class="nav-left">
       <div class="nav-logo">
         <router-link :to="{ name: 'Home' }">
@@ -58,6 +58,7 @@ export default {
     display: flex;
     font-weight: 500;
     z-index: 3;
+    padding: 0 6%;
     transition: transform 0.5s;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     &-left, &-right , &-logo {

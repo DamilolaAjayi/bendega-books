@@ -9,11 +9,11 @@
                 <li>Struggle with slow career growth?</li>
                 <li>Experience derailed academic progress as a result of poor communication?</li>
             </ul>
-            <p>
-                It’s time to ditch the guesswork and gain mastery of the common errors in English Language and how you can overcome them.
+            <p class="text">
+                It’s time to <span> ditch</span> the guesswork and <span> gain mastery of the common errors </span> in English Language and how you can <span> overcome </span>them.
             </p>
-            <p>
-                <a href="#">Order now </a>and start achieving better results.
+            <p class="closing--text">
+                <a href="/store">Order now </a>and start achieving better results.
             </p>            
         </div>
     </div>
@@ -27,17 +27,44 @@ export default {
 
 <style lang="scss" scoped>
     .common--issues {
-        height: 90vh;
-        padding: 3rem 0rem;
+        padding: 4em 0em;
         background-color: #e7edf6;
+        &__header {
+            font-size: 3.2em;
+            @media screen and (max-width: 767px) {
+                font-size: 2.6em;
+            }
+        }
     }    
     li {
         margin: 2em 1.2em;
     }
     ul {
         padding: 0 3rem 1rem;
+        font-size: 1.5em;
+        @media screen and (max-width: 767px) {
+            padding: 0em;
+            font-size: 1.2em;
+        }
     }
     p>a {
         font-weight: bold;
+    }
+    .text {
+        font-size: 1.2em;
+        @media screen and (max-width: 767px) {
+            line-height: 1.5;
+        }
+    }
+    .closing--text {
+        padding: 5rem 0;
+        font-size: 1.3em;
+        @media screen and (max-width: 767px) {
+            padding-top: 1em;
+        }
+    }
+    span {
+        color: #6794C4;
+        font-weight: 500;
     }
 </style>
