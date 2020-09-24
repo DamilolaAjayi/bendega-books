@@ -18,7 +18,6 @@
           <web-nav />
         </div>
       </div>
-        <!-- shopping cart in here -->
     </div>
   </div>
 </template>

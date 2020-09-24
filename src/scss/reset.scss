@@ -3,28 +3,6 @@ html {
     padding: 0;
     margin: 0;
   }
-  
-//   @font-face {
-//     font-family: 'Soleil';
-//     font-style: normal;
-//     font-weight: normal;
-//     src: url(../fonts/soleil/Soleil-Regular.woff) format('woff');
-//   }
-  
-//   @font-face {
-//     font-family: 'Soleil';
-//     font-style: normal;
-//     font-weight: 500;
-//     src: url(../fonts/soleil/Soleil-Book.woff) format('woff');
-//   }
-  
-//   @font-face {
-//     font-family: 'Soleil';
-//     font-style: normal;
-//     font-weight: bold;
-//     src: url(../fonts/soleil/Soleil-Bold.woff) format('woff');
-//   }
-  
   body {
     font-family: "Soleil", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-font-smoothing: antialiased;
@@ -50,11 +28,7 @@ html {
     cursor: pointer;
     color: #6794C4;
   }
-  
-  a:hover {
-    // color: $color-orange;
-  }
-  
+    
   .clearfix:before,
   .clearfix:after {
     content: " ";
