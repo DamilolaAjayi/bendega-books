@@ -15,8 +15,17 @@ const router = new VueRouter({
       {path: '/', name: 'Home', component: Home},
       {path: '/author', name: 'Author', component: Author},
       {path: '/faq', name: 'Faq', component: Faq},
-  ]
+    ]
 })
+
+router.beforeEach((to, from, next) => {
+  if (!to.matched.length) {
+    next('/');
+  } else {
+    next();
+  }
+});
+
 new Vue({
   el: '#app',
   router,
