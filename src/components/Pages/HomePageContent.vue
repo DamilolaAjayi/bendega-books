@@ -10,7 +10,7 @@
                     by renowned author and linguist,<span> William Bendega</span>.
                 </p>
                 <p class="action">
-                    <a href="/store">Order now</a> only <span>₦3,000</span> <img src="@/assets/arrow.svg" alt=""> <span>₦1,500</span>
+                    <a href="/store#!/Common-Errors-in-English-Language-Today/p/235677001/category=0">Order now</a> only <span>₦3,000</span> <img src="@/assets/arrow.svg" alt=""> <span>₦1,500</span>
                 </p>
             </div>
             <div class="landing__item">
@@ -18,7 +18,7 @@
                     <img class="promo-banner" src="@/assets/50-off.png" alt="50% off banner">
                     <img src="@/assets/common-errors-book.png" alt="common errors book">
                 </div>
-                <a href="/store" class="cta">Order Now</a>  
+                <a href="/store#!/Common-Errors-in-English-Language-Today/p/235677001/category=0" class="cta">Order Now</a>  
             </div>
         </div>
     </div>
