@@ -21,15 +21,54 @@
                 <a href="/store#!/Common-Errors-in-English-Language-Today/p/235677001/category=0" class="cta">Order Now</a>  
             </div>
         </div>
+        <div>
+            <SocialChat
+                icon
+                class="whatsapp-chat"
+                :attendants="attendants"
+                >
+                <p slot="header">Click on one of our attendants below to chat on WhatsApp.</p>
+                <template v-slot:button>
+                    <img
+                    src="https://raw.githubusercontent.com/ktquez/vue-social-chat/master/src/icons/whatsapp.svg"
+                    alt="icon whatsapp"
+                    aria-hidden="true"
+                    >      
+                </template>
+                <small slot="footer">Opening hours: 8am to 6pm</small>
+            </SocialChat>
+        </div>
     </div>
 </template>
 
 <script>
+import { SocialChat } from 'vue-social-chat';
 export default {
-    
+    components: {
+        SocialChat,
+    },
+    data: () => ({
+        attendants: [
+        {
+            app: 'whatsapp',
+            label: 'Sales Rep',
+            name: 'Sade Akande',
+            number: '5581983383532',
+            avatar: {
+            src: 'https://avatars0.githubusercontent.com/u/8084606?s=460&u=20b6499a416cf7129a18e5c168cf387e159edb1a&v=4',
+            alt: 'Alan Ktquez avatar'
+            }
+        },
+        ]
+    })
 }
 </script>
 
+<style lang="scss">
+    .vsc-popup-body__link-info__label {
+        margin-bottom: 0.5rem;
+    }
+</style>
 <style lang="scss" scoped>
     .landing {
         &__content {
@@ -185,5 +224,16 @@ export default {
         @media screen and (max-width: 450px) {
             margin-right: -15px;
         }
+    }
+    .whatsapp-chat {
+        --vsc-bg-header: green;
+        --vsc-bg-footer: #fafafa;
+        --vsc-text-color-header: white;
+        --vsc-text-color-footer: green;
+        --vsc-bg-button: green;
+        --vsc-text-color-button: blue;
+        --vsc-outline-color: green;
+        --vsc-border-color-bottom-header: green;
+        --vsc-border-color-top-footer: green;
     }
 </style>

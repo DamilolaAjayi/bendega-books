@@ -24,7 +24,7 @@ export default {
      &-web-link{
         list-style: none;
         a:hover {
-            font-weight: 800;
+          color: #1b262c;
         }
     }
   } 

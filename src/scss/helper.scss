@@ -7,3 +7,14 @@
 .section {
     width: 100%;
 }
+:root {
+    --vsc-bg-header: blue;
+    --vsc-bg-footer: #fafafa;
+    --vsc-text-color-header: blue;
+    --vsc-text-color-footer: blue;
+    --vsc-bg-button: green;
+    --vsc-text-color-button: blue;
+    --vsc-outline-color: blue;
+    --vsc-border-color-bottom-header: blue;
+    --vsc-border-color-top-footer: blue;
+}

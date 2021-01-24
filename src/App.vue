@@ -11,6 +11,7 @@ import Navigation from '@/components/Global/Navigation/Nav';
 import Background from '@/components/Global/Background';
 import Footer from '@/components/Global/Footer';
 
+
 Vue.component('navigation', Navigation);
 Vue.component('el-footer', Footer);
 
